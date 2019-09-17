@@ -1,13 +1,5 @@
 $(".bridals").on("click", function() {
   event.preventDefault();
-  var photoShootContainer = document.getElementsByClassName(
-    "photoshoots-container"
-  );
-
-  var bridalsContainer = document.getElementsByClassName(
-    "bridal-bridalsContainer"
-  );
-
   $(".photoshoots-container").css('display, "none');
   $(".bridal-container").css("display", "block");
 });
@@ -19,21 +11,12 @@ $(".photoshootbutton").on("click", function() {
   $(".photoshoots-container").css("display", "block");
 });
 
-// $("#editorials").on("click", function() {
-//   event.preventDefault();
-//   $(".portfoliorows").addClass("displaynone");
-//   $(".editorialsrow").removeClass("displaynone");
-// });
-
-// $("#events").on("click", function() {
-//   event.preventDefault();
-//   $(".eventsrow").removeClass("displaynone");
-// });
-
-// $("#commercials").on("click", function() {
-//   event.preventDefault();
-//   $(".commercialsrow").removeClass("displaynone");
-// });
+$(".commercialsbutton").on("click", function() {
+  event.preventDefault();
+  $(".bridal-container").css("display", "none");
+  $(".photoshoots-container").css("display", "none");
+  $(".commercial-container").css("display", "block");
+});
 
 $(document).ready(function() {
   $(window).scroll(function() {
